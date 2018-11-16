@@ -17,7 +17,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 ## Blue
 
-Vulnerability #1:
+##Vulnerability #1:
 
 SQL Injection (SQLi): This vulnerability lies in the blue site not filtering SQL injections in the url
 > blue/public/staff/salespeople/show.php?id=#
@@ -27,7 +27,7 @@ The SQL injection ' OR 1=1 --' is inserted where the id "#" is this returns thes
 GIF Walkthrough:https://gfycat.com/RemorsefulTestyDragon
 
 
-Vulnerability #2: 
+##Vulnerability #2: 
 
 Session Hijacking/Fixation: This vulnerability is exploited by using the session id gained from https://35.184.88.145/blue/public/staff/login.php to login to the green site without having credentials.
 
@@ -36,14 +36,14 @@ GIF Walkthrough:https://gfycat.com/TautBlankKarakul
 
 ## Green
 
-Vulnerability #1:
+##Vulnerability #1:
 
 Username Enumeration: This vulnerability is displayed when users are logging in. If the login username does not exist then the site will display "Login was Unsuccessful" in BOLD; whereas if the username does exist in the database then the text will not be bold. This allows attackers to see if usernames exist, which they can then try brute force attacks or other methods.
 
 GIF Walkthrough:https://gfycat.com/DesertedMeekArchaeopteryx
 
 
-Vulnerability #2:
+##Vulnerability #2:
 
 Cross-Site Scripting (XSS): This XSS attack is directed at the contact page, where a non-user can input XSS by itself into the username and feedback field. This then causes the scripts to run on any user's computer who accesses the feedback page.
 
@@ -54,7 +54,7 @@ GIF Walkthrough:https://gfycat.com/WelllitCluelessHedgehog
 
 ## Red
 
-Vulnerability #1:
+##Vulnerability #1:
 
 Insecure Direct Object Reference (IDOR): This vulnerability lies in the URL 
 > https://35.184.88.145/red/public/salesperson.php?id=1
@@ -70,7 +70,7 @@ lazyman@globitek.com
 GIF Walkthrough:https://gfycat.com/PoorGrimyDrake
 
 
-Vulnerability #2: __________________
+##Vulnerability #2: __________________
 
 
 ## Notes
