@@ -17,7 +17,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 ## Blue
 
-##Vulnerability #1:
+Vulnerability #1:
 
 SQL Injection (SQLi): This vulnerability lies in the blue site not filtering SQL injections in the url
 > blue/public/staff/salespeople/show.php?id=#
