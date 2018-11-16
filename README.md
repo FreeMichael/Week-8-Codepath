@@ -61,7 +61,8 @@ Insecure Direct Object Reference (IDOR): This vulnerability lies in the URL
 
 where the user id is not sanitized, with this a user could change the "#" value after id= to access information about other sales staff that would usually be hidden such as:
 
-```Lazy Lazyman (FIRED FOR STEALING)
+```
+Lazy Lazyman (FIRED FOR STEALING)
 321-432-9876
 lazyman@globitek.com
 ```
