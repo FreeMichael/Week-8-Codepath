@@ -21,6 +21,7 @@ Vulnerability #1:
 
 SQL Injection (SQLi): This vulnerability lies in the blue site not filtering SQL injections in the url
 > blue/public/staff/salespeople/show.php?id=#
+
 The SQL injection ' OR 1=1 --' is inserted where the id "#" is this returns these numerical values %27%20OR%201=1%20--%27 which should have been sanitized.
 
 GIF Walkthrough:https://gfycat.com/RemorsefulTestyDragon
@@ -47,6 +48,7 @@ Vulnerability #2:
 Cross-Site Scripting (XSS): This XSS attack is directed at the contact page, where a non-user can input XSS by itself into the username and feedback field. This then causes the scripts to run on any user's computer who accesses the feedback page.
 
 GIF Walkthrough:https://gfycat.com/WelllitCluelessHedgehog
+
 ``` Due to a student having a script run that redirects users to google I was unable to display my XSS```
 
 
@@ -56,7 +58,9 @@ Vulnerability #1:
 
 Insecure Direct Object Reference (IDOR): This vulnerability lies in the URL 
 > https://35.184.88.145/red/public/salesperson.php?id=1
+
 where the user id is not sanitized, with this a user could change the "#" value after id= to access information about other sales staff that would usually be hidden such as:
+
 ``` Lazy Lazyman (FIRED FOR STEALING)
 321-432-9876
 lazyman@globitek.com```
