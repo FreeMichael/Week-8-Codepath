@@ -77,7 +77,8 @@ GIF Walkthrough:https://gfycat.com/PoorGrimyDrake
 
 On the final Red vulnerability (Cross-Site Request Forgery), I had trouble on creating a .php file. I will re-visit this.
 
-##Concept Review
+
+Concept Review:
 
 Which attacks were easiest to execute? Which were the most difficult?
 
